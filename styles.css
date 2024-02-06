@@ -1,12 +1,18 @@
+
+/* * é chamado de seletor universal. 
+Esse seletor representa todos os elementos serão afetados pelas definições de estilo ali colocadas. */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Altera a configuração do fundo do BODY */
 body{
     background-color: rgb(247 247 249);
 }
+
+/* Estou definindo como o menu vai se comportar */
 .menu{
     display: flex;
     align-items: center;
@@ -15,6 +21,7 @@ body{
     height: 70px;
 }
 
+/* Estou configurando o texto LOGO em si, tamanho e etc */
 .logo a{
     text-decoration: none;
     font-size: 24px;
@@ -23,6 +30,7 @@ body{
     position: relative;
 }
 
+/* Configurando a bolinha que está ao lado do logo */
 .logo a::before{
     content: "";
     width: 26px;
@@ -34,18 +42,21 @@ body{
     left: -35px;
 }
 
+/* Configurando a lista para ficar inlineo, ou seja, lado a lado */
 nav ul li{
     list-style: none;
     display: inline-block;
     margin-right: 80px;
 }
 
+/* estou configurando o A que está dentro da lista */
 nav ul li a{
     text-decoration: none;
     color: rgb(34 32 33);
     transition: 0.3s;
 }
 
+/* criquei um botao para o link e um hover */
 nav ul li a:hover{
     border-bottom: 3px solid rgb(74 97 81);
 }
@@ -60,17 +71,20 @@ nav ul li a:hover{
     overflow: hidden;
 }
 
+/* aqui é a configuração do meeu H1 */
 .lado-esquerdo h1{
     font-size: 70px;
     color: rgb(74 97 81);
 }
 
+/* configurando o lado esquerdo e o paragrafo */
 .lado-esquerdo p {
     color: rgb(34 32 33);
     margin-bottom: 30px;
     font-weight: bold;
 }
 
+/* configurando o lado esquerdo A */
 .lado-esquerdo a {
     display: inline-block;
     background-color: rgb(34 32 33);
@@ -81,11 +95,12 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
+/* confiraudno o hover do botão */
 .lado-esquerdo a:hover{
     background-color: rgb(66, 62, 64);
 }
 
-
+/* colocando a imagem de definindo o tamanho */
 .lado-direito img{
     width: 600px;
     height: 600px;
